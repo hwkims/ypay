@@ -4444,10 +4444,13 @@ strong {
 	color: #fff;
 	font-size: 1.8rem;
 	padding: 13px 45px;
+	width: 140px;
+	text-align: center;
 }
 
-.s51-btn-wrap>div:first-child {
+.s51-btn-wrap>div{
 	margin-right: 15px;
+
 }
 
 @media(max-width: 1080px) {
