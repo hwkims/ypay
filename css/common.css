@@ -708,7 +708,7 @@ li.m6 ul.sub {
 }
 
 .main02 .txt_wrap h3 {
-	font-family: 'MaruBuri';
+
 	margin-bottom: 40px;
 }
 
@@ -788,11 +788,13 @@ li.m6 ul.sub {
 }
 
 .main03 h3 {
-	font-family: 'MaruBuri';
+
 	font-size: 4.2rem;
 	font-weight: 700;
 	color: #fff;
-	text-shadow: 4px 4px 3px #00000060;
+	text-shadow: 4px 4px 3px #333,
+	0px 0px 4px #333
+	;
 }
 
 @media(max-width:1300px) {
@@ -1719,13 +1721,22 @@ strong {
 	color: #F2ECD4;
 	background: #4F2700;
 	padding: 18px 45px;
-	border-radius: 50px;
+	border-radius: 15px;
 	transition: all 0.2s;
 	display: inline-block;
+ 
 }
 
 .btn2 a:hover {
 	color: #fff;
+	box-shadow: 
+	0px 0px 50px #fff,
+	0px 0px 40px #fff,
+	0px 0px 30px #fff,
+	0px 0px 20px #fff,
+	0px 0px 10px #fff;
+	;
+
 }
 
 .btn2 i {
@@ -1835,7 +1846,7 @@ strong {
 	}
 
 	.btn2 a {
-		font-size: 1.6rem;
+		font-size: 2rem;
 		padding: 15px 30px;
 	}
 
@@ -3411,7 +3422,7 @@ strong {
 .s21-1-ul::after {
 	content: '';
 	display: block;
-	background: url('i../mg/s21_img5.png') no-repeat center / 100%;
+	background: url('/img/s21_img5.png') no-repeat center / 100%;
 	width: 174px;
 	height: 174px;
 	position: absolute;
@@ -3427,19 +3438,19 @@ strong {
 }
 
 .s21-1-li1 {
-	border-radius: 100px 0 0 0;
+	border-radius: 1000px 0 0 0;
 }
 
 .s21-1-li2 {
-	border-radius: 0 100px 0 0;
+	border-radius: 0 1000px 0 0;
 }
 
 .s21-1-li3 {
-	border-radius: 0 0 0 100px;
+	border-radius: 0 0 0 1000px;
 }
 
 .s21-1-li4 {
-	border-radius: 0 0 100px 0;
+	border-radius: 0 0 1000px 0;
 }
 
 .s21-1-li1,
@@ -3452,7 +3463,7 @@ strong {
 	color: #fff;
 	text-align: center;
 	font-weight: 500;
-	margin-top: 10px;
+	/* margin-top: 10px; */
 }
 
 .s21-1-li img {
@@ -3473,9 +3484,12 @@ strong {
 	align-items: center;
 	justify-content: space-around;
 }
-
+.s21-2 .btn2 a{
+	background: #000;
+}
 .s21-2 .btn2:nth-child(2) a {
 	background: #D11F2D;
+ 
 }
 
 .s21-3 {
@@ -3492,7 +3506,7 @@ strong {
 
 .s21-3 .rb_title2+p {
 	color: #fff;
-	background: #B3A07C;
+	background: #111;
 	border-radius: 50px;
 	text-align: center;
 	padding: 15px;
@@ -3500,6 +3514,7 @@ strong {
 	font-weight: 500;
 	width: 90%;
 	margin: 0 auto;
+	text-shadow: #fff 0px 0px 10px;
 }
 
 .s21-link {
@@ -3658,19 +3673,19 @@ strong {
 	}
 
 	.s21-1-li1 {
-		border-radius: 50px 0 0 0;
+		border-radius: 500px 0 0 0;
 	}
 
 	.s21-1-li2 {
-		border-radius: 0 50px 0 0;
+		border-radius: 0 500px 0 0;
 	}
 
 	.s21-1-li3 {
-		border-radius: 0 0 0 50px;
+		border-radius: 0 0 0 500px;
 	}
 
 	.s21-1-li4 {
-		border-radius: 0 0 50px 0;
+		border-radius: 0 0 500px 0;
 	}
 
 	.s21-1-ul::after {
@@ -4408,8 +4423,13 @@ strong {
 	max-width: 100%;
 	width: auto;
 	height: auto;
+	transition: filter 0.3s ease-in-out; /* add transition effect */
 }
 
+.s51_ul li img:hover {
+  /* filter: grayscale(100%);  */
+  filter: brightness(1.3);
+}
 .s51_ul h4 {
 	font-size: 2.4rem;
 	font-weight: 600;
@@ -4442,10 +4462,21 @@ strong {
 
 .s51-btn-wrap a {
 	color: #fff;
-	font-size: 1.8rem;
-	padding: 13px 45px;
-	width: 140px;
+	/* font-size: 1.8rem; */
+	font-size: 2rem;
+	padding: 8px 30px;
+	/* padding: 13px 45px; */
+	width: 130px;
+	height: 130px;
+	line-height: 100px;
 	text-align: center;
+	border-radius: 50%;
+	transition: background-color 0.3s ease-in-out; /* add transition effect */
+}
+
+.s51-btn-wrap a:hover {
+  background-color: #fff; /* change background color on hover */
+  color: #000; /* keep text color white on hover */
 }
 
 .s51-btn-wrap>div{
