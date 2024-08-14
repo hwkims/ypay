@@ -216,7 +216,7 @@
 					<div class="navi_in">
 
 						<div class="home_btn_all">
-							<p class="home_btn"><a href="../index-2.html"><img src="img/h_btn.png" alt="home"></a></p>
+							<p class="home_btn"><a href="index.html"><img src="img/h_btn.png" alt="home"></a></p>
 						</div>
 
 						<div class="navi_left">
@@ -436,7 +436,7 @@
 
 						<div class="s_inner">
 							<div class="sub_title_wrap">
-								<a href="../index.html"><img src="img/h_h_btn.png" alt=""></a>
+								<a href="index.html"><img src="img/h_h_btn.png" alt=""></a>
 								<h2>성심당</h2>
 								<h3>소식</h3>
 							</div>
@@ -733,7 +733,12 @@
 										display: block;
 										width: 100%;
 										height: auto;
+										border-radius: 25px;
 									}
+									.s31_a:hover {
+										filter:brightness(1.2);
+  transition: transform 0.3s ease-in-out;
+}
 
 									.s31_a h3 {
 										display: block;
@@ -748,6 +753,7 @@
 										white-space: nowrap;
 										text-overflow: ellipsis;
 										word-break: break-all;
+										border-radius: 25px;
 									}
 
 									.board_newgallery li:hover h3 {
@@ -1378,21 +1384,7 @@
 	<div id="ajax_cart" style="display:none;"></div>
 
 
-	<!-- ie6,7에서 사이드뷰가 게시판 목록에서 아래 사이드뷰에 가려지는 현상 수정 -->
-	<!--[if lte IE 7]>
-<script>
-$(function() {
-    var $sv_use = $(".sv_use");
-    var count = $sv_use.length;
 
-    $sv_use.each(function() {
-        $(this).css("z-index", count);
-        $(this).css("position", "relative");
-        count = count - 1;
-    });
-});
-</script>
-<![endif]-->
 	<script src="theme/responsive_sungsimdang/js/aos.js"></script>
 	<script>
 		AOS.init({
@@ -1407,8 +1399,4 @@ $(function() {
 
 </body>
 
-<!-- Mirrored from www.sungsimdang.co.kr/51 by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 12 Aug 2024 00:50:46 GMT -->
-
 </html>
-
-<!-- 사용스킨 : theme/basic_52 -->

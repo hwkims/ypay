@@ -1,6 +1,8 @@
 html {
 	scroll-behavior: smooth;
   }
+
+  
 .la_gallery_wrap {
 	padding: 0px 0 0 0;
 	width: 100%;
@@ -10,6 +12,7 @@ html {
 .la_gallery {
 	display: flex;
 	flex-flow: row wrap;
+
 }
 
 .la_gallery_img {
@@ -31,7 +34,7 @@ html {
 
 .la_gallery_img .img {
 	width: 100%;
-	padding-bottom: 100%;
+	padding-bottom: 100%;	border-radius: 50%;
  
 }
 
@@ -45,7 +48,7 @@ html {
 	padding: 5px 0;
 	text-align: center;
 	font-size: 16px;
-	font-weight: 500;
+	font-weight: 500;	border-radius: 50%;
 }
 
 @media(max-width:1080px) {
@@ -88,7 +91,9 @@ html {
 }
 
 .la_gallery_img a:hover .img {
-	transform: scale(1.1);
+	/* transform: scale(1.1); */
+	/* transform: rotate(360deg); */
+	filter:brightness(1.2)
 }
 
 
@@ -506,7 +511,7 @@ li.m6 ul.sub {
 	padding: 10px 10px;
 	background-color: transparent;
 	background-image: none;
-	border-radius: 3px;
+	border-radius: 25px;
 	border: 0;
 }
 
@@ -835,7 +840,9 @@ li.m6 ul.sub {
 
 .main04 .sym img {
 	width: 420px;
-	display: block;
+	display: block;	
+ 
+
 }
 
 @media(max-width:1300px) {
@@ -899,7 +906,9 @@ li.m6 ul.sub {
  
 	width: 100%;
 	height: 100%;
-	display: block;
+	display: block;	
+ 
+	border-radius: 50px;
 }
 
 .main05 .flx a>div {
@@ -3396,6 +3405,7 @@ strong {
 	max-width: 100%;
 	width: auto;
 	margin-right: 20px;
+
 }
 
 .s21-1 .s_title3+p {
@@ -3557,7 +3567,8 @@ strong {
 	width: 100%;
 	height: 200px;
 	display: block;
-	background: #000;
+	/* background: #000; */
+	border-radius: 5px;
 }
 
 .s21-4 .flx a p {
