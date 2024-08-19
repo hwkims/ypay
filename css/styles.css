@@ -313,7 +313,7 @@ input,
 textarea,
 button {
 	font-size: 1.0em;
-	font-family: 'Nanum Gothic', 'Malgun Gothic', 'verdana', 'arial', 'dotum', '돋움', sans-serif;
+ 
 	vertical-align: middle;
 	color: #6b6b6b;
 }
@@ -1767,7 +1767,7 @@ a.btn_admin:hover {
 	vertical-align: top
 }
 
-/* middle 로 하면 게시판 읽기에서 목록 사용시 체크박스 라인 깨짐 */
+ 
 .tbl_head02 tfoot th,
 .tbl_head02 tfoot td {
 	padding: 10px 0;
@@ -2444,59 +2444,8 @@ box-shadow:inset 0 1px 1px rgba(0, 0, 0, .075);
 		background-size: 50%;
 	}
 }
-
-/* cheditor 이슈 */
-.cheditor-popup-window *,
-.cheditor-popup-window :after,
-.cheditor-popup-window :before {
-	-webkit-box-sizing: content-box;
-	-moz-box-sizing: content-box;
-	box-sizing: content-box;
-}
-
-/* Mobile화면으로 */
-#device_change {
-	display: block;
-	margin: 0.3em;
-	padding: 0.5em 0;
-	border: 1px solid #eee;
-	background: #fff;
-	color: #000;
-	font-size: 2em;
-	text-decoration: none;
-	text-align: center
-}
-
-/*메일인증*/
-.rg_em {
-	margin-top: 5px
-}
-
-.rg_em caption {
-	padding: 0;
-	font-size: 0;
-	line-height: 0;
-	overflow: hidden
-}
-
-/*캡챠 모바일에서 피시버젼*/
-#captcha.m_captcha audio {
-	display: block;
-	margin: 5px 0 10px;
-}
-
-#captcha.m_captcha #captcha_key {
-	margin-left: 3px
-}
-
-#captcha.m_captcha #captcha_reload span {
-	background: none;
-	display: inline
-}
-
-/*#captcha.m_captcha  #captcha_reload {position:relative ;width:auto;top:0;left:0;margin:0;padding:0 10px;height:43px;border:0;background:#e4eaec;vertical-align:middle;overflow:hidden;cursor:pointer}
-*/
-
+ 
+ 
 .selectbox {
 	height: 40px;
 	line-height: 40px;
